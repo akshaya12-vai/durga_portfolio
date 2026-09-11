@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Durga Devi — Software Developer</title>
+<meta name="description" content="Portfolio of Durga Devi, a Computer Science student and aspiring software developer specialising in AI, web development and cybersecurity." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader" class="loader" aria-hidden="true">
+  <svg class="loader-butterfly" width="70" height="60" viewBox="0 0 100 90">
+    <g class="wing wing-left"><path d="M50 45 C 20 5, -10 15, 8 45 C -10 75, 20 85, 50 45 Z"/></g>
+    <g class="wing wing-right"><path d="M50 45 C 80 5, 110 15, 92 45 C 110 75, 80 85, 50 45 Z"/></g>
+    <ellipse class="body" cx="50" cy="45" rx="3.2" ry="20"/>
+  </svg>
+  <p class="loader-name">Durga Devi</p>
+</div>
+
+<!-- ===== AMBIENT LAYERS ===== -->
+<div id="butterfly-field" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo">Durga Devi<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link active" data-section="home">Home</a>
+    <a href="#about" class="nav-link" data-section="about">About</a>
+    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+    <a href="#education" class="nav-link" data-section="education">Education</a>
+    <a href="#resume" class="nav-link" data-section="resume">Resume</a>
+    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+  </nav>
+  <div class="navbar-actions">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="pageContent">
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Computer Science Student</p>
+        <h1 class="reveal">Hi, I'm Durga Devi <span class="wave">👋</span></h1>
+        <h2 class="hero-role reveal">
+          <span id="typedRole"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-desc reveal">
+          Passionate about software development, artificial intelligence, web technologies,
+          and cybersecurity. I enjoy building practical projects and continuously learning
+          new technologies.
+        </p>
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="/api/resume" class="btn btn-ghost" id="downloadResumeHero">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap reveal">
+        <div class="hero-image-glow"></div>
+        <img src="assets/profile.jpg" alt="Portrait of Durga Devi" class="hero-image" />
+        <div class="hero-ring"></div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <p class="eyebrow reveal">About Me</p>
+    <h2 class="section-title reveal">A little about who I am</h2>
+    <p class="about-text reveal">
+      Hi, I'm Durga Devi, a Computer Science student with a strong interest in software development,
+      artificial intelligence, web development, and cybersecurity. I enjoy solving real-world
+      problems through technology and developing practical applications. I am continuously
+      improving my programming and technical skills while exploring new technologies.
+    </p>
+    <div class="about-cards">
+      <div class="glass-card reveal">
+        <div class="card-icon">🧩</div>
+        <h3>Problem Solver</h3>
+        <p>Enjoy solving technical and real-world problems.</p>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-icon">⚡</div>
+        <h3>Quick Learner</h3>
+        <p>Always interested in learning new technologies.</p>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-icon">💡</div>
+        <h3>Tech Enthusiast</h3>
+        <p>Passionate about software, AI, web development and cybersecurity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <p class="eyebrow reveal">What I work with</p>
+    <h2 class="section-title reveal">Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group glass-card reveal">
+        <h3>Programming Languages</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon">🐍</span>Python</li>
+          <li><span class="skill-icon">☕</span>Java</li>
+          <li><span class="skill-icon">🔤</span>C</li>
+          <li><span class="skill-icon">➕</span>C++</li>
+          <li><span class="skill-icon">🟨</span>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group glass-card reveal">
+        <h3>Web Technologies</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon">🌐</span>HTML</li>
+          <li><span class="skill-icon">🎨</span>CSS</li>
+          <li><span class="skill-icon">🟨</span>JavaScript</li>
+          <li><span class="skill-icon">⚛️</span>React.js</li>
+          <li><span class="skill-icon">🟢</span>Node.js</li>
+          <li><span class="skill-icon">⚡</span>FastAPI</li>
+        </ul>
+      </div>
+      <div class="skill-group glass-card reveal">
+        <h3>Databases</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon">🐬</span>MySQL</li>
+          <li><span class="skill-icon">🍃</span>MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-group glass-card reveal">
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon">🔧</span>Git</li>
+          <li><span class="skill-icon">🐙</span>GitHub</li>
+          <li><span class="skill-icon">🖥️</span>VS Code</li>
+          <li><span class="skill-icon">📦</span>npm</li>
+        </ul>
+      </div>
+      <div class="skill-group glass-card reveal full-span">
+        <h3>Other Technologies</h3>
+        <ul class="skill-list">
+          <li><span class="skill-icon">🤖</span>Artificial Intelligence</li>
+          <li><span class="skill-icon">📊</span>Machine Learning</li>
+          <li><span class="skill-icon">🛡️</span>Cybersecurity</li>
+          <li><span class="skill-icon">🔗</span>REST APIs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <p class="eyebrow reveal">Selected work</p>
+    <h2 class="section-title reveal">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal" data-tilt>
+        <div class="project-glow"></div>
+        <h3>AI-Powered Credit Card Fraud Detection and Prevention</h3>
+        <p>An AI-based system designed to identify suspicious credit card transactions and help prevent fraudulent activities using machine learning techniques.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Machine Learning</span><span>AI</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-small btn-primary">View Project</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-small btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt>
+        <div class="project-glow"></div>
+        <h3>Student Complaint Management System</h3>
+        <p>A web-based system that allows students to submit complaints and enables administrators to manage, track, and resolve complaints efficiently.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Flask/FastAPI</span><span>MySQL</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-small btn-primary">View Project</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-small btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt>
+        <div class="project-glow"></div>
+        <h3>E-Book Management System</h3>
+        <p>A digital platform for managing books, users, and book-related information through a structured backend and database system.</p>
+        <div class="tech-tags">
+          <span>FastAPI</span><span>Python</span><span>SQLAlchemy</span><span>MySQL/MongoDB</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-small btn-primary">View Project</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-small btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt>
+        <div class="project-glow"></div>
+        <h3>Cyber Defense System</h3>
+        <p>A cybersecurity project focused on network traffic monitoring, DoS detection, port scanning, and secure data encryption.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>Scapy</span><span>Socket</span><span>Cryptography</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-small btn-primary">View Project</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-small btn-ghost">GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section education">
+    <p class="eyebrow reveal">Academic journey</p>
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">2023 — 2027</span>
+          <h3>B.E, Computer Science Engineering</h3>
+          <p>Akshaya College of Engineering and Technology, Coimbatore</p>
+          <span class="timeline-badge">7.54 CGPA</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">2023</span>
+          <h3>Higher Secondary Certificate</h3>
+          <p>RKR. GRKS. Matric and Higher Secondary School, Udumalpet</p>
+          <span class="timeline-badge">70%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">2021</span>
+          <h3>Secondary School Leaving Certificate</h3>
+          <p>RKR. GRKS. Matric and Higher Secondary School, Udumalpet</p>
+          <span class="timeline-badge">80%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume" class="section resume">
+    <div class="resume-inner glass-card reveal">
+      <div class="resume-icon">📄</div>
+      <h2 class="section-title">My Resume</h2>
+      <p>Interested in knowing more about my education, technical skills, and projects?</p>
+      <div class="resume-buttons">
+        <a href="/api/resume" class="btn btn-primary btn-large">Download Resume</a>
+        <a href="assets/Durga_Devi_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-large">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <p class="eyebrow reveal">Get in touch</p>
+    <h2 class="section-title reveal">Let's Connect</h2>
+    <p class="contact-lead reveal">Have a project idea, opportunity, or just want to connect? Feel free to reach out!</p>
+
+    <div class="contact-grid">
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="mailto:durgadeviganesan6@gmail.com">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h4>Email</h4>
+            <p>durgadeviganesan6@gmail.com</p>
+          </div>
+        </a>
+        <a class="contact-card" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">💼</span>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>Connect with me</p>
+          </div>
+        </a>
+        <a class="contact-card" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">💻</span>
+          <div>
+            <h4>GitHub</h4>
+            <p>View my repositories</p>
+          </div>
+        </a>
+      </div>
+
+      <form id="contactForm" class="contact-form glass-card reveal" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me a little about it..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-large" id="sendBtn">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-butterfly-track" aria-hidden="true"></div>
+  <p class="footer-name">Durga Devi © 2026</p>
+  <p class="footer-tag">Designed &amp; built with ❤️</p>
+  <div class="footer-links">
+    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:durgadeviganesan6@gmail.com">Email</a>
+  </div>
+</footer>
+
+<div id="successToast" class="success-toast" role="status" aria-live="polite">
+  <span class="toast-butterfly">🦋</span>
+  <span id="successToastText">Message sent!</span>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
